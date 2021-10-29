@@ -1,0 +1,5 @@
+# neovim 
+nvim/plugged/*
+nvim/autoload/*
+nvim/undodir/*
+
