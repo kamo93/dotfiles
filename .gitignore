@@ -1,5 +1,5 @@
 # neovim 
-nvim/plugged/*
-nvim/autoload/*
-nvim/undodir/*
+nvim/plugged
+nvim/autoload
+nvim/undodir
 
