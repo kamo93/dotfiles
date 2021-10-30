@@ -1,0 +1,23 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Kevin Andres Mancera Orjuela
+	email = 93.kevinmancera@gmail.com
+[core]
+	excludesfile = ~/.config/git/.gitignore_global
+	ignorecase = false
+	pager = delta
+
+[delta]
+	syntax-theme = Monokai Extended
+	navigate = true
+	dark = true
+	line-numbers = true
+	side-by-side = true
+	inspect-raw-lines = false
+
+[interactive]
+	diffFilter = delta --color-only
+
+[diff]
+	colorMoved = default

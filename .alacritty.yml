@@ -1,0 +1,61 @@
+window:
+  title: alacritty
+  padding:
+    x: 5
+    y: 0
+  dynamic_padding: false
+  decorations: buttonless
+scrolling:
+  history: 100000
+  multiplier: 3
+font:
+  normal:
+    family: JetBrains Mono NL
+    style: Regular
+  bold:
+    family: JetBrains Mono NL
+    style: Medium
+  italic:
+    family: JetBrains Mono NL
+    style: Italic
+  size: 17
+  offset:
+    x: 0
+    y: 1
+  glyph_offset:
+    x: 0
+    y: 0
+draw_bold_text_with_bright_colors: false
+background_opacity: 0.95
+live_config_reload: true
+mouse:
+  hide_when_typing: false
+colors:
+  primary:
+    background: '0x282c34'
+    foreground: '0xabb2bf'
+	normal:
+    black:   '0x20232A'
+    red:     '0xe86671'
+    green:   '0x98c379'
+    yellow:  '0xe0af68'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0x798294'
+	bright:
+    black:   '0x21252b'
+    red:     '0xe86671'
+    green:   '0x98c379'
+    yellow:  '0xe0af68'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
+	indexed_colors:
+    - { index: 16, color: '0xd19a66' }
+    - { index: 17, color: '0xf65866' }
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 0
