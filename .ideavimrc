@@ -1,0 +1,52 @@
+syntax on
+set number
+set autoindent
+set relativenumber
+set surround
+set ideajoin
+set idearefactormode=keep
+set nohls
+set ignorecase
+set incsearch " incremental search that show partial matches
+set smartcase
+set shortmess-=S
+set scrolloff=16
+" mapleader to space
+let mapleader = " "
+nnoremap <Leader> <Nop>
+nnoremap <Leader>l :action NextTab<CR>
+nnoremap <Leader>h :action PreviousTab<CR>
+nnoremap <Leader><esc> :action CloseEditor<CR>
+nnoremap <Leader>c yiwoconsole.log('<esc>pla,<esc>p
+"--------------NERDTree CONFIG---------------"
+set NERDTree
+nnoremap <Leader>n :NERDTreeFocus<CR>
+"--------------multiple-cursor---------------"
+set multiple-cursors
+
+" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+nmap <C-p> <Plug>RemoveOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+
+" Note that the default <A-n> and g<A-n> shortcuts don't work on Mac due to dead keys.
+" <A-n> is used to enter accented text e.g. ñ
+nmap <S-C-n> <Plug>AllWholeOccurrences
+xmap <S-C-n> <Plug>AllWholeOccurrences
+nmap g<S-C-n> <Plug>AllOccurrences
+xmap g<S-C-n> <Plug>AllOccurrences
+
+" Quickly insert an empty new line without entering insert mode
+nnoremap <Leader>o o<Esc>0"_D
+nnoremap <Leader>O O<Esc>0"_D
+
+" easy move between split windows
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
