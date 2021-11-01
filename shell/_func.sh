@@ -31,6 +31,7 @@ function import_apps() {
 	brew bundle --file="$BREW_EXPORT_APPS_PATH" --force
 	echo "Brew apps imported correctly!"
 
+	# TODO create the script so install all the packages dependening on the version on the files npm-*.txt
 	xargs -I_ npm install -g "_" <"/Users/kevin.mancera/.dotfiles/npm-v14_17_5.txt"
 	echo "Npm 14 packages installed"
 }
