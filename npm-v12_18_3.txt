@@ -1,0 +1,9 @@
+clipboard-cli
+expo-cli
+prettier
+react-native-cli
+svgexport
+typescript
+typescript-language-server
+vim-language-server
+yarn

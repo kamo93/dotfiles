@@ -38,7 +38,7 @@ set spelllang=en_us
 set completeopt=menuone,noinsert,noselect
 set mouse=a
 set signcolumn=yes
-setlocal fo-=t fo+=croql
+"setlocal fo-=t fo+=croql works for split the line if its longer
 set hidden " let you leave current buffer no matter is saved or not
 
 " plugin manager

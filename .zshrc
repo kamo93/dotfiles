@@ -127,4 +127,6 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias f='cd $(fd --type d --hidden --exclude .git --exclude node_modules .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+
+source ~/.dotfiles/shell/_exports.sh
+source ~/.dotfiles/shell/_func.sh
