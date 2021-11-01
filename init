@@ -1,0 +1,11 @@
+#!usr/bin/env bash
+
+echo "================== Installing kamo dotfiles ===================="
+
+# how to install git 
+# first install brew
+# import the brew packages from import_apps
+#	
+
+
+
