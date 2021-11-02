@@ -4,7 +4,7 @@ echo "================== Installing kamo dotfiles ===================="
 
 # first install brew
 # import the brew packages from import_apps
-#	
+# run the create links function	
 
 
 

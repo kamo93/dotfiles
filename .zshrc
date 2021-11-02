@@ -4,6 +4,7 @@
 # tmux config oh my zsh plugin https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
 # start tmux right away when start the terminal the bad thing is that if you
 # kill the tmux session also kill the terminal
+start=$SECONDS
 ZSH_TMUX_AUTOSTART="false" 
 
 # Path to your oh-my-zsh installation.
@@ -72,7 +73,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node mvn brew zsh-autosuggestions vi-mode virtualenvwrapper zsh-syntax-highlighting tmux)
+plugins=(git node brew vi-mode zsh-syntax-highlighting tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,7 +106,6 @@ alias zshconfig="vim ~/.zshrc"
 
 # set vi mode mark enable
 eval spaceship_vi_mode_enable
-
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
@@ -123,10 +123,22 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
+
 [[ -f /Users/kevin.mancera/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/kevin.mancera/.config/yarn/global/node_modules/tabtab/.completions/yarn.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-source ~/.dotfiles/shell/_exports.sh
-source ~/.dotfiles/shell/_func.sh
+# TODO move this function
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
+
+#start=$SECONDS
+#end=$SECONDS
+#echo 'fzf finish '$(($end-$start))
+end=$SECONDS
+result=$(($end-$start))
+echo 'take '$result' seconds to load'
