@@ -102,11 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias v='nvim'
 export EDITOR='nvim'
-alias zshconfig="vim ~/.zshrc"
+alias zsh="nvim ~/.zshrc"
 
 # set vi mode mark enable
 eval spaceship_vi_mode_enable
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="v ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
