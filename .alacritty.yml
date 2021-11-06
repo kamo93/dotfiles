@@ -18,7 +18,7 @@ font:
   italic:
     family: JetBrains Mono NL
     style: Italic
-  size: 17
+  size: 15
   offset:
     x: 0
     y: 1
@@ -26,7 +26,7 @@ font:
     x: 0
     y: 0
 draw_bold_text_with_bright_colors: false
-background_opacity: 0.95
+background_opacity: 1 # opacity to the bg tired of not being 1 
 live_config_reload: true
 mouse:
   hide_when_typing: false

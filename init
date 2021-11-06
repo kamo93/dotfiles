@@ -4,6 +4,9 @@ echo "================== Installing kamo dotfiles ===================="
 
 # first install brew
 # import the brew packages from import_apps
+# download the whole repo know that you have git
+# install oh-my-zsh
+# install spaceship-zsh-theme
 # run the create links function	
 
 
